@@ -1,0 +1,92 @@
+/*This entire thing is gonna be labled and organized I swear...*/
+body {
+    background-color: white;
+}
+.extra-padding {
+    padding: 40px;
+}
+.padding {
+    padding: 10px;
+}
+.parallax {
+    background-image: url("Images/court.png");
+  
+    min-height: 800px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+#header{
+    font-size: 60px;
+    position: absolute;
+    margin-left: 100px;
+    margin-right: auto;
+    width: 40%;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #95B4CC;
+}
+#tagline {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 100px;
+    margin-right: auto;
+    width: 60%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: aliceblue;
+}
+.text-box{
+    height: 600px;
+    padding: 50px;
+}
+h4 {
+    color: #2B4C65;
+}
+.logo {
+    max-height: 80px;
+}
+.navbar-brand {
+    color: #2B4C65;
+}
+a.navbar-brand:hover{
+    color: #95B4CC;
+}
+a.nav-link {
+    font-size: 14px;
+    padding: 20px;
+    color: #2B4C65;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+}
+a.nav-link:hover{
+    color: #95B4CC;
+}
+.navbar-toggler {
+    color: #2B4C65;
+}
+.btn.btn-primary {
+    color: white;
+    background: #2B4C65;
+    border: #2B4C65;
+  }
+.btn.btn-primary:hover{
+    background: #95B4CC;
+
+}
+.contact {
+    background-color: #95B4CC;
+}
