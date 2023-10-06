@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frank Salvato</title>
+        <script src="https://kit.fontawesome.com/7c96d4366d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        
+    </head>
+
+<body>
+<!--Header Start-->
+<section class="sub-header">
+    <!--Navigation Start-->
+    <nav>
+        <a class="logo" href="index.html">Frank<em>Salvato</em></a>
+        <div class="nav-links" id="navLinks">
+            <!--FontAwesome icons for collapsed header-->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="caseresults.html">Case Results</a></li>
+                <li><a href="index.html#qc">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--FontAwesome icons for collapsed header-->
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!--Navigation End-->
+  <h1>About Frank</h1>
+</section>
+<!--Header End-->
+
+<section class="about-frank">
+        <div class="aboutp">
+            <h1>An experienced advocate fighting for your rights</h1>
+            <p>For more than 25 years, Frank Salvato has been fighting to defend the rights of his clients. He has built his reputation on getting results. He is intimately familiar with all facets of the Virginia criminal justice system and has the knowledge and skill to make sure you understand your legal options and to guide you through the legal process.</p> <br> 
+            <p>For more than 25 years, Frank Salvato has represented clients in state and federal courts on charges ranging from minor offenses to serious felonies, including:</p> <br>
+           <ul>
+            <li>White Collar Crime</li>
+            <li>Assault and battery</li>
+            <li>DWI/DUI/OWI</li>
+            <li>Drug Offense</li>
+            <li>Theft and larceny</li>
+            <li>Pornography Related Charges</li>
+            <li>Robbery</li>
+            <li>Internet and Computer Crimes</li>
+            <li>Rape</li>
+            <li>Homicide — murder/manslaughter</li>
+            <li>Domestic violence</li>
+            <li>Traffic Offenses</li>
+           </ul>
+           <p>When you have charges on your record that you want eliminated, Frank Salvato can help you get those charges sealed or expunged or represent you in appellate court.</p> <br/>
+           <p>No matter what obstacle has been placed in your way, rest assured that Frank Salvato strives diligently to help you overcome it and works hard to attain the best possible result for you.</p><br/>
+           <h1>Going the extra mile to ensure your freedom</h1>
+           <p>Nothing is more important than your freedom, your rights or your dignity as you face the most difficult time of your life. If you need a defense attorney who is dedicated to your case, contact Frank Salvato today.</p><br/>
+           <h1>Don’t delay, contact Frank Salvato today!</h1>
+           <p>When you have been charged with a crime, choose a criminal defense attorney with the experience and dedication to make a difference. Call 703-548-5000 or contact him online to schedule an appointment. With offices conveniently located in Alexandria and Leesburg, consultations are free and confidential.</p>
+           <div class="btn-padding">
+           <a class="aboutp-btn" href="index.html#qc">Schedule a Consultation Today</a> 
+        </div>
+           <h2>Admitted</h2>
+           <ul class="ul2">
+            <li>Virginia and U.S. District Court, Eastern District of Virginia</li>
+            <li>District of Columbia and U.S. District Court</li>
+            <li>U.S. Supreme Court</li>
+           </ul>
+           <h2>Education</h2>
+           <ul class="ul2">
+            <li>Washington College of Law, J.D.</li>
+            <li>American University, B.A.</li>
+           </ul>
+           <h2>Associations and memberships</h2>
+           <ul class="ul2">
+            <li>Virginia State Bar</li>
+            <li>The District of Columbia Bar</li>
+            <li>National Association of Criminal Defense Lawyers</li>
+            <li>Virginia College of Criminal Defense Attorneys</li>
+            <li>Alexandria Bar Association</li>
+           </ul>
+        </div>
+</section>
+
+<!--Footer Section Start-->
+<section class="footer">
+    <p>1203 Duke Street, Alexandria, Virginia 22314</p>
+    <p>(703) 548-5000</p>
+    <p>Copyright ©2023 Frank Salvato All Rights Reserved</p>
+</section>
+<!--Footer Section End-->
+
+<!------Javascript for toggle menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
+
+ <!--Back to top Button Start-->
+ <div><a id="back2Top" title="Back to top" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a></div>
+ <!--Back to top Button End-->
+<script>
+/* Scroll to top when arrow up clicked BEGIN */
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+if (height > 100) {
+$('#back2Top').fadeIn();
+} else {
+$('#back2Top').fadeOut();
+}
+});
+$(document).ready(function() {
+$("#back2Top").click(function(event) {
+event.preventDefault();
+$("html, body").animate({ scrollTop: 0 }, "slow");
+return false;
+});
+
+});
+/* Scroll to top when arrow up clicked END */
+</script>
+</body>

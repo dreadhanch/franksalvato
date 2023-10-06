@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Salvato</title>
+    <script src="https://kit.fontawesome.com/7c96d4366d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+</head>
+
+<body>
+    <!--Header Start-->
+    <section class="header">
+        <!--Navigation Start-->
+        <nav>
+            <a class="logo" href="index.html">Frank<em>Salvato</em></a>
+            <div class="nav-links" id="navLinks">
+                <!--FontAwesome icons for collapsed header-->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="caseresults.html">Case Results</a></li>
+                    <li><a href="#qc">Contact</a></li>
+                </ul>
+            </div>
+
+            <!--FontAwesome icons for collapsed header-->
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!--Navigation End-->
+
+        <!--Hero Image Start-->
+        <div class="text-box">
+            <h1><span class="autoType"></span></h1>
+            <p>Dedicated And experienced Criminal Defense attorney with a proven record of success in federal and State Courts</p>
+            <a class="hero-btn" href="#qc">Schedule a Consultation Today</a>
+        </div>
+        <!--Hero Image End-->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".autoType", {
+                strings: ["The Law Offices of Frank Salvato"],
+                typeSpeed: 50
+            })
+        </script>
+    </section>
+    <!--Header End-->
+
+<!--Not Guilty Section start
+ng = not guilty abbreviation for css--> 
+    <section class="ng">
+        <h1>Not Guilty Verdicts</h1>
+            <div class="ng-list"> 
+                <ul>
+                    <li><h3>Capital Murder</h3>(Jury trial in the Eastern District of Virginia)</li>
+                    <li><h3>Bank Robbery</h3> (Jury trial in the Eastern District of Virginia)</li>
+                    <li> <h3>Drug Conspiracy</h3> (Jury trial in the Eastern District of Virginia)</li>
+                    <li><h3>Bail Reform Act</h3>(Jury trial in Superior Court, Washington D.C.)</li>
+                    <li> <h3>Driving While Intoxicated</h3> (Jury trial in Superior Court, D.C)</li>
+                    <li><h3>Felon in Possession/Firearm </h3>(Jury trial in Eastern District of Virginia)</li>
+                    <li><h3>Capital Murder</h3>Capital Murder (Jury trial in the Eastern District of Virginia)</li>
+                    <li><h3>Bank Robbery </h3> (Jury trial in the Eastern District of Virginia)</li>
+                    <li><h3>Drug Conspiracy</h3> (Jury trial in the Eastern District of Virginia)</li>
+                    <li><h3>Bail Reform Act </h3>Bail Reform Act (Jury trial in Superior Court, Washington D.C.)</li>
+                    <li><h3>Driving While Intoxicated</h3> (Jury trial in Superior Court, D.C)</li>
+                    <li><h3>Felon in Possession/Firearm</h3>Felon in Possession/Firearm (Jury trial in Eastern District of Virginia)</li>
+                </ul>
+            </div>
+    </section>
+<!--Not Guilty Section end--> 
+
+<!---About Section Start
+    this section contains the 2020 video and brief summary of Frank-->
+    <section class="about">
+        <div >
+             <div class="about-text">
+                 <h1>About Frank</h1>
+                 <div class="about-deco">
+                 <p>Frank Salvato has won jury trials on charges ranging from DUI to Capital Murder.  Over half of the acquittals are against federal prosecutors in Virginia and the District of Columbia.  </p> <br> 
+                 <p>These not guilty verdicts do not include the multitude of victories in non-jury trials in both state and federal courts, pretrial dismissal of charges, negotiation of favorable plea agreements, departures from sentencing guidelines, successful habeas petitions, expungements, and other noteworthy accomplishments. Such as being featured in ABC's 20/20.</p> <br>
+                 <p>Mr. Salvato has also won cases in the Fourth Circuit Court of Appeals including reversals from trials held before Judge Bryan and Judge Ellis in the Eastern District of Virginia. The reversals resulted in dismissal upon remand.</p> <br>
+                 <a class="about-btn" href="about.html">Learn More</a>
+                </div>
+                
+             </div> 
+             <!--2020 Video-->
+             <div class="about-video">
+                <iframe width="640" height="360" src="https://abcnews.go.com/video/embed?id=97772442" allowfullscreen frameborder="0"></iframe>
+             </div>
+        </div>
+     </section>
+     <!---About Section End-->   
+
+    <!--Areas of Practice Section Start
+        aop = areas of practice abbreviation for css-->
+    <section class="aop">
+       <h1>Court Results</h1>
+        <div class="row">
+            <div class="aop-col">
+                <a href="caseresults.html"><img src="Images/VA-State-Capitol-Building.jpg" alt="small court"></a>
+                    <h3>State Court Results</h3>
+            </div>
+            <div class="aop-col">
+                <a href="caseresults.html"><img src="Images/Richmond-Federal-Appeals-Court.jpg" alt="small court"></a>
+                    <h3>Federal Court Results</h3>
+            </div>
+            <div class="aop-col">
+                <a href="caseresults.html"><img src="Images/SmallCourthouse.jpeg" alt="small court"></a>
+                <h3>Cases of Note</h3>
+            </div>
+        </div>
+    </section>
+    <!--Areas of Practice Section End-->
+
+    <!--Quick Contact Section Start
+    qc = quick contact css abreviation-->
+    <section class="qc" id="qc">
+        <h1>Quick Contact</h1>
+        <div class="qc-form">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message"></textarea>
+                <button class="about-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!--Quick Contact Section End-->
+
+    <!--Back to top Button Start-->
+    <div><a id="back2Top" title="Back to top" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a></div>
+     <!--Back to top Button End-->
+
+     <!--Footer Section Start-->
+    <section class="footer">
+        <p>1203 Duke Street, Alexandria, Virginia 22314</p>
+        <p>(703) 548-5000</p>
+        <p>Copyright ©2023 Frank Salvato All Rights Reserved</p>
+    </section>
+    <!--Footer Section End-->
+
+    <!------Javascript for toggle menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+
+    
+
+    <!------ Scroll to top when arrow up clicked Start------>
+    <script>
+    $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+    $('#back2Top').fadeIn();
+    } else {
+    $('#back2Top').fadeOut();
+    }
+    });
+    $(document).ready(function() {
+    $("#back2Top").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+    });
+    
+    });
+    </script>
+    <!------ Scroll to top when arrow up clicked End------>
+</body>
+</html>
